@@ -2,11 +2,21 @@ development: &default
   adapter: postgresql
   database: THUDHack_development
   encoding: utf8
-  host: localhost
   min_messages: warning
   pool: 2
   timeout: 5000
+  username: postgres
+  password:
 
-test:
+test: &test
   <<: *default
   database: THUDHack_test
+
+production:
+  <<: *default
+  database: THUDHack_production
+  username: THUDHack
+  password: <%= ENV['CAFFEMOTTA_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test
