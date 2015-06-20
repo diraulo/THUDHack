@@ -48,13 +48,16 @@ GEM
       builder
       multi_json
     arel (6.0.0)
+    autoprefixer-rails (5.2.0)
+      execjs
+      json
     awesome_print (1.6.1)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bourbon (4.2.3)
-      sass (~> 3.4)
-      thor
+    bootstrap-sass (3.3.4.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     bundler-audit (0.3.1)
       bundler (~> 1.2)
@@ -127,6 +130,8 @@ GEM
       railties (>= 3.0.0)
     ffaker (2.0.0)
     flutie (2.0.0)
+    font-awesome-rails (4.3.0.0)
+      railties (>= 3.2, < 5.0)
     formulaic (0.3.0)
       activesupport
       capybara
@@ -164,9 +169,6 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.1)
     multi_test (0.1.2)
-    neat (1.7.2)
-      bourbon (>= 4.0)
-      sass (>= 3.3)
     newrelic_rpm (3.12.0.288)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -214,7 +216,6 @@ GEM
     rake (10.4.2)
     recipient_interceptor (0.1.2)
       mail
-    refills (0.1.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rspec-core (3.1.7)
@@ -294,7 +295,7 @@ PLATFORMS
 DEPENDENCIES
   airbrake
   awesome_print
-  bourbon (~> 4.2.0)
+  bootstrap-sass (~> 3.3.4)
   bundler-audit
   byebug
   capybara
@@ -309,12 +310,12 @@ DEPENDENCIES
   factory_girl_rails
   ffaker
   flutie
+  font-awesome-rails
   formulaic
   high_voltage
   i18n-tasks
   jquery-rails
   launchy
-  neat (~> 1.7.0)
   newrelic_rpm (>= 3.9.8)
   normalize-rails (~> 3.0.0)
   pg
@@ -323,7 +324,6 @@ DEPENDENCIES
   rack-timeout
   rails (= 4.2.2)
   recipient_interceptor
-  refills
   rspec-rails (~> 3.1.0)
   sass-rails (~> 5.0)
   shoulda-matchers!
