@@ -6,7 +6,7 @@ Feature: User registration
   Background:
     Given I am on the "Landing" page
     When I click "Sign up"
-    Then I should be on the User registration page
+    Then I should be on the "user registration" page
 
   Scenario: Successfully create new profile
     When I fill in "user_first_name" with "John"
