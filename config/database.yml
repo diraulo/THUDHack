@@ -16,7 +16,7 @@ production:
   <<: *default
   database: THUDHack_production
   username: THUDHack
-  password: <%= ENV['CAFFEMOTTA_DATABASE_PASSWORD'] %>
+  password: <%= ENV['THUDHACK_DATABASE_PASSWORD'] %>
 
 cucumber:
   <<: *test
