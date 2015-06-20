@@ -3,14 +3,19 @@ def path_to(page_name)
   case name
   when 'landing' then
     root_path
-  when 'user_sign_up' then
+  when 'user registration' then
     new_user_registration_path
+  when 'user login' then
+    new_user_session_path
   else
     fail('Path to the specified is not listed in #path_to')
   end
 end
 
-# Given(/^I am on the "(.*?)" page$/) do |page|
+When(/^I visit the site$/) do
+  visit root_path
+end
+
 When(/^I (?:go to|am on) the "([^"]*)" page$/) do |page|
   visit path_to(page)
 end
@@ -37,4 +42,8 @@ end
 
 Then(/^I should see "(.*?)"$/) do |text|
   expect(page).to have_text text
+end
+
+Then(/^I should be on the "(.*?)" page$/) do |page|
+  expect(current_path).to eq path_to(page)
 end
