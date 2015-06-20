@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import "bootstrap-sprockets";
-@import "bootstrap";
+@import "bootstrap-mod";
 
 /* Fonts css */
 @import "//fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900";
@@ -17,3 +17,30 @@
 @import "owl.carousel";
 @import "jquery.fancybox";
 @import "owl.transitions";
+
+a {
+  color: $thud-orange;
+  text-decoration: none;
+  &:hover {
+    color: $thud-red;
+  }
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: $thud-orange;
+  border-color: $thud-orange;
+}
+
+.btn:hover.btn-primary, .btn:focus.btn-primary, .btn.focus.btn-primary, .btn:active.btn-primary, .btn.active.btn-primary {
+  border-color: transparent;
+  background: #ea997e;
+}
+
+.partner-1 {
+  display:block;
+  background:transparent image-url('partner-1.png') center top no-repeat;
+}
+.partner-1 {
+  background:transparent image-url('partner-1-color.png') center top no-repeat;
+}
