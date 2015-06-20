@@ -39,6 +39,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'factory_girl_rails'
   gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.1.0'
   gem 'ffaker'
 end

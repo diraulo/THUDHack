@@ -8,20 +8,25 @@ Feature: User registration
     When I click "Sign up"
     Then I should be on the User registration page
 
-  Scenario: Create new profile
-    Then show me the page
-    When I fill in "First Name" with "John"
-    # When I fill in "first_name" with "John"
-    And I fill in "Last Name" with "Doe"
-    # And I fill in "last_name" with "Doe"
-    And I fill in "City" with "Pretoria"
-    # And I fill in "city" with "Pretoria"
-    And I fill in "Email" with "johndoe@example.com"
-    #And I fill in "email" with "johndoe@example.com"
-    And I fill in "Password" with "password"
-    # And I fill in "password" with "password"
-    And I fill in "Password Confirmation" with "password"
-    # And I fill in "password_confirmation" with "password"
+  Scenario: Successfully create new profile
+    When I fill in "user_first_name" with "John"
+    And I fill in "user_last_name" with "Doe"
+    And I fill in "user_city" with "Pretoria"
+    And I fill in "user_email" with "johndoe@example.com"
+    And I fill in "user_password" with "password"
+    And I fill in "user_password_confirmation" with "password"
+    And I select "user_member_type" to "Entrepreneur"
     And I accept the terms and conditions
-    And I click "Sign up" button
-    Then I should be on the view page for User "John Doe"
+    And I click "Sign up"
+    Then I should see "You have signed up successfully"
+
+  Scenario: User enters an incorrect email address
+    When I fill in "user_email" with "aa@dd"
+    And I click "Sign up"
+    Then I should see "is invalid"
+
+  Scenario: User's password and password confirmation are not matching
+    When I fill in "user_password" with "password"
+    Then I fill in "user_password_confirmation" with "Pas$w0rd"
+    And I click "Sign up"
+    Then I should see "doesn't match Password"
