@@ -4,7 +4,8 @@
   <%= render "shared/head" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="<%= body_class %>">
+<body class="<%= body_class %>" id="home" data-offset="80" data-target=".navbar" data-spy="scroll">
+  <div id="page-preloader"><span class="spinner"></span></div>
   <%= render "flashes" -%>
   <%= yield %>
   <%= render "javascript" %>

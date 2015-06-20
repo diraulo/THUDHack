@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'Simple-Line-Icons';
-	src:url('../fonts/simple-line-icons/fonts/Simple-Line-Icons.eot');
-	src:url('../fonts/simple-line-icons/fonts/Simple-Line-Icons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/simple-line-icons/fonts/Simple-Line-Icons.woff') format('woff'),
-		url('../fonts/simple-line-icons/fonts/Simple-Line-Icons.ttf') format('truetype'),
-		url('../fonts/simple-line-icons/fonts/Simple-Line-Icons.svg#Simple-Line-Icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Simple-Line-Icons';
+  src: url(font-path('Simple-Line-Icons.eot'));
+  src: url(font-path('Simple-Line-Icons.eot') + '?#iefix') format('embedded-opentype'),
+       url(font-path('Simple-Line-Icons.woff')) format('woff'),
+       url(font-path('Simple-Line-Icons.ttf')) format('truetype'),
+       url(font-path('Simple-Line-Icons.svg#Simple-Line-Icons')) format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */

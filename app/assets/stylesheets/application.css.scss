@@ -1,5 +1,19 @@
 @charset "utf-8";
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "style";
+
+/* Fonts css */
+@import "//fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900";
+@import "simple-line-icons";
+@import "font-awesome";
+
+/* Basic css */
+@import "base/base";
+@import "maincss";
+@import "jquery-ui";
+@import "animate";
+
+/* Additional css */
+@import "owl.carousel";
+@import "jquery.fancybox";
+@import "owl.transitions";
