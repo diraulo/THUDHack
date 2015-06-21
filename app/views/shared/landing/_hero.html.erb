@@ -1,17 +1,57 @@
-<section class="home-header">
-  <div class="container-fluid wrap-contact-form blog ">
-      <div class="row text-center">
-          <div class=" col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeInUp" data-wow-duration="2s" >
-              <h2>Be Aware of News</h2>
-              <p class="large">Sed condimentum ante ac quam varius pretium. Nunc ornare laoreet augue et elementum. Phasellus enim libero, blandit vel sapien vitae, magna et.</p>
-          </div>
-      </div>
-      <div class="row wow fadeInUp" data-wow-duration="2s" >
-          <div class="col-md-8 col-md-offset-2 col-sm-10 ">
-              <div class="subscribe">
-                  <form class="form-inline clearfix"><input type="email" class="form-control pull-left" placeholder="Enter your e-mail"><button type="submit" class="btn btn-primary btn-round pull-right hidden-xs">Subscribe</button><button type="submit" class="btn btn-primary btn-round-small pull-right visible-xs-block"><i class="fa fa-pencil fa-lg"></i></button></form>
+<section class="home-header dark wrap-header-slider">
+  <div class="home-slider carousel slide" data-interval="8000" data-ride="carousel" id="home-carousel">
+    <div class="carousel-inner">
+      <div class="item active banner1">
+        <%#= image_tag 'banner1.jpg' %>
+        <div class="carousel-caption">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-6 col-sm-10 col-xs-10">
+                <h2 class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="1.5s">Entrepreneurs Start Here</h2>
+                <p class="large wow fadeInUp" data-wow-delay="1.8s" data-wow-duration="1.5s">Connect to the fastest growing entrepreneurship network in Sub-Saharan African</p>
+                <div class="row wow fadeInUp" data-wow-delay="2.6s" data-wow-duration="1.5s">
+                  <div class="col-md-5"><%= link_to 'Join our community now', new_user_registration_path, class: 'btn btn-primary btn-short' %></div>
+                  <%#<div class="col-md-5"><a href="#" class='btn btn-warning btn-short'>Watch video <i class='fa fa-youtube-play'></i> </a></div>%>
+                </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
+      <div class="item banner2">
+        <%#= image_tag 'banner2.png' %>
+        <div class="carousel-caption">
+          <div class="container-fluid wrap-contact-form blog ">
+            <div class="row text-center">
+              <div class=" col-md-10 col-md-offset-1 col-sm-12 text-center wow fadeInUp" data-wow-duration="2s">
+                <p>Our next Meetup</p>
+                <h2>Entrepreneurship in Africa</h2>
+                <p class="large">
+                  <i class="icon-pointer"></i> Mabonen Precinct | <i class="icon-clock"></i> June 27
+                </p>
+              </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-duration="2s">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 ">
+                <div class="subscribe">
+                  <form class="form-inline clearfix"><input class="form-control pull-left" placeholder="Enter your e-mail" type="email"><button class="btn btn-primary btn-round pull-right hidden-xs" type="submit">RSVP</button>
+                    <button class="btn btn-primary btn-round-small pull-right visible-xs-block" type="submit">
+                      <i class="fa fa-pencil fa-lg"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" data-slide="prev" href="#home-carousel">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="right carousel-control" data-slide="next" href="#home-carousel">
+      <i class="fa fa-angle-right"></i>
+    </a>
   </div>
 </section>
