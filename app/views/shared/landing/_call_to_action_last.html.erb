@@ -5,14 +5,56 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-2 col-md-8 col-sm-12 text-center wow fadeInUp" data-wow-duration="2s">
-        <h4>Get Started Now</h4>
-        <p>Sed condimentum ante ac quam varius pretium. Nunc ornare laoreet augue et elementum. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.</p>
+        <h4>Get Involved</h4>
       </div>
     </div>
-    <div class="row buttons wow fadeInUp" data-wow-duration="2s">
+
+    <div class="row wrap-services">
+      <div class="col-md-4 clearfix col-sm-6 col-xs-12 service-item wow fadeInUp" data-wow-duration="2s" >
+        <div class="service-icon pull-left">
+            <span class="icon-briefcase"></span>
+        </div>
+        <div class="service-text pull-right">
+            <div class="text-title">Corporate Organizations</div>
+            Engage us in how we can offer valuable mileage for your budgets in line with your socio-economic impact objectives
+        </div>
+      </div>
+
+      <div class="col-md-4 clearfix col-sm-6 col-xs-12 service-item wow fadeInUp" data-wow-duration="2s" >
+        <div class="service-icon pull-left">
+            <span class="icon-graph"></span>
+        </div>
+        <div class="service-text pull-right">
+            <div class="text-title">Capacity Development Providers</div>
+            Enquire about how we can partner to develop a quality pipeline of investable startups
+        </div>
+      </div>
+
+      <div class="col-md-4 clearfix col-sm-6 col-xs-12 service-item wow fadeInUp" data-wow-duration="2s" >
+        <div class="service-icon pull-left">
+            <span class="icon-users"></span>
+        </div>
+        <div class="service-text pull-right">
+            <div class="text-title">Governments</div>
+            Connect with us to plug your resources into impactful research that will give you better insights of the needs, challenges and opportunities for emerging entrepreneurs through The Hookup Dinner community.
+        </div>
+      </div>
+
+      <div class="col-sm-offset-4 col-sm-4 service-item wow fadeInUp" data-wow-duration="2s" >
+        <div class="service-icon pull-left">
+          <span class="icon-rocket"></span>
+        </div>
+        <div class="service-text pull-left">
+          <div class="text-title">Startups</div>
+          Be a part of African history in the making to create sustainable solutions with socio-economic impact.
+        </div>
+      </div>
+
       <div class="col-sm-offset-4 col-sm-4 clearfix">
         <%= link_to 'Sign up now', new_user_registration_path, class: 'btn btn-primary btn-sm btn-block' %>
       </div>
-    </div>
+    </div><!--row-->
+    <%= link_to 'Sign up', new_user_registration_path, style: 'color: aliceblue;'%>
+    <%= link_to 'Sign in', new_user_session_path, style: 'color: aliceblue;' %>
   </div>
 </section>

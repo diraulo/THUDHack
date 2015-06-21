@@ -2238,6 +2238,7 @@ section.divider.striped-icon {
   text-align: center;
 }
 .brand-logo .brand-logo-wrap {
+  background-position-y: center;
   display: table-cell;
   vertical-align: middle;
   opacity: 0.7;
@@ -2246,6 +2247,7 @@ section.divider.striped-icon {
   transition: opacity 0.3s;
 }
 .brand-logo .brand-logo-wrap:hover {
+  background-position-y: center;
   opacity: 1;
 }
 .twitter {
@@ -5886,7 +5888,7 @@ text[text-anchor="end"] {
   height: 350px;
   right: 0;
   bottom: 0;
-  background: url("../images/graph-home2.svg") top center no-repeat;
+  // background: url("../images/graph-home2.svg") top center no-repeat;
   background-size: cover;
 }
 .home-slider {

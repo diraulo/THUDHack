@@ -10,4 +10,7 @@
 //= require TweenMax.min
 //= require highcharts
 //= require Chart.min
+//= require wow.min
 //= require custom
+
+new WOW().init();
