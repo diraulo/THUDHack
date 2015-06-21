@@ -5,7 +5,7 @@ Feature: User registration
 
   Background:
     Given I am on the "Landing" page
-    When I click "Sign up"
+    When I click "Sign up now"
     Then I should be on the "user registration" page
 
   Scenario: Successfully create new profile
