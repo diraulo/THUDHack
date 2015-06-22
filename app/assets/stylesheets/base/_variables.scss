@@ -1,35 +1,19 @@
-// Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+//some variables for ASSAN theme, you can create your own easily.
+$body-bg:#fff;
+$base-line-height:24px;
+$skincolor:#4f82e9;//Theme default color code, paste your own code here
+$lightcolor:#fff; //white color and background
+$graycolor:#777; //gray color for p tags
+$darkcolor:#333; //dark color for heading
+$primary-font:  'Open Sans', sans-serif; //default font family
+$title-font: 'Raleway', sans-serif; //Title and headings font family
+$base-font-size:13px; //default basic font size
+$alert-color:red; //alert color
 
-// Font Sizes
-$base-font-size: 1em;
 
-// Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
+$thud-red: #be1622;
+$thud-yellow: #f9b234;
+$thud-orange: #e94e1b;
+$thud-black: #1d1d1b;
 
-// Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
-$base-z-index: 0;
-
-// Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
-
-// Font Colors
-$base-background-color: #fff;
-$base-font-color: $dark-gray;
-$action-color: $blue;
-
-// Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
-
-// Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$primary-color: $thud-red
