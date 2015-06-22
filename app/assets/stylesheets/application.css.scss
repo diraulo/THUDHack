@@ -1,8 +1,141 @@
 @charset "utf-8";
+@import "bootstrap-sprockets";
+@import "bootstrap-mod";
 
-@import "normalize-rails";
-@import "bourbon";
-@import "base/grid-settings";
-@import "neat";
+/* Fonts css */
+@import "//fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900";
+@import "simple-line-icons";
+@import "font-awesome";
+
+/* Basic css */
 @import "base/base";
-@import "refills/flashes";
+@import "maincss";
+@import "jquery-ui";
+@import "animate";
+
+/* Additional css */
+@import "owl.carousel";
+@import "jquery.fancybox";
+@import "owl.transitions";
+
+a {
+  color: $thud-orange;
+  text-decoration: none;
+  &:hover {
+    color: $thud-red;
+  }
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: $thud-orange;
+  border-color: $thud-orange;
+}
+
+.btn:hover.btn-primary, .btn:focus.btn-primary, .btn.focus.btn-primary, .btn:active.btn-primary, .btn.active.btn-primary {
+  border-color: transparent;
+  background: #ea997e;
+}
+
+.partner-1 {
+  display:block;
+  background:transparent image-url('partners/partner-1.png') center top no-repeat;
+  &:hover {
+    background:transparent image-url('partners/partner-1-color.png') center top no-repeat;
+  }
+}
+.partner-2 {
+  display:block;
+  background:transparent image-url('partners/partner-2.png') center top no-repeat;
+  &:hover {
+    background:transparent image-url('partners/partner-2-color.png') center top no-repeat;
+  }
+}
+.partner-3 {
+  display:block;
+  background:transparent image-url('partners/partner-3.png') center top no-repeat;
+  &:hover {
+    background:transparent image-url('partners/partner-3-color.png') center top no-repeat;
+  }
+}
+.partner-4 {
+  display:block;
+  background:transparent image-url('partners/partner-4.png') center top no-repeat;
+  &:hover {
+    background:transparent image-url('partners/partner-4-color.png') center top no-repeat;
+  }
+}
+
+.banner1 {
+  width: 100%;
+  height: 100%;
+  background: image-url('banner1.jpg') center center no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, $thud-black, #dc4225);
+    opacity: .5;
+  }
+}
+
+.banner2 {
+  width: 100%;
+  height: 100%;
+  background: image-url('banner2.png') center center no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top left, $thud-black, $thud-orange);
+    opacity: .7;
+  }
+}
+
+.connect {
+  color: $thud-yellow;
+}
+.engage {
+  color: $thud-orange;
+}
+.contribute {
+  color: $thud-red;
+}
+
+.form-control:focus {
+  border-color: $thud-orange;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(233, 78, 27, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(233, 78, 27, .6);
+}
+
+#sign-up {
+  overflow: hidden;
+  min-height: 100%;
+}
+.sidebar-signup {
+  position: fixed;
+  width: 30em;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f9f9fa;
+
+  .container {
+    padding: 15em 3em;
+  }
+
+  h4 {
+    margin-top: 1.5em;
+  }
+}
