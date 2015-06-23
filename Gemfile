@@ -26,6 +26,8 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-rails'
 gem 'omniauth'
 gem 'omniauth-google'
+gem 'omniauth-linkedin'
+gem 'omniauth-twitter'
 
 group :development do
   gem 'spring'
