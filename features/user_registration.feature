@@ -4,8 +4,8 @@ Feature: User registration
   So that I can become a THUD member
 
   Background:
-    Given I am on the "Landing" page
-    When I click "Sign up"
+    Given I visit the site
+    And I click "Sign up now"
     Then I should be on the "user registration" page
 
   Scenario: Successfully create new profile
