@@ -16,6 +16,10 @@ When(/^I visit the site$/) do
   visit root_path
 end
 
+When(/^I visit the "(.*?)" page$/) do |page|
+  visit path_to(page)
+end
+
 When(/^I (?:go to|am on) the "([^"]*)" page$/) do |page|
   visit path_to(page)
 end
