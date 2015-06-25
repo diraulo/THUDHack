@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
     'Partner/Sponsor'
   ]
 
+  # before_save :create_bequester_profile
+
   validates_presence_of :first_name, :last_name #, :city, :member_type
   validates_acceptance_of :t_and_cs
 
@@ -29,4 +31,9 @@ class User < ActiveRecord::Base
 
     user
   end
+
+  # def create_bequester_profile
+  #   bequester = BEQUESTER::Api::User.new(user)
+  #   self.bequester_uid = bequester.sign_up
+  # end
 end
