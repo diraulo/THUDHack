@@ -24,6 +24,10 @@ gem 'unicorn'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-rails'
+gem 'omniauth'
+gem "omniauth-google-oauth2"
+gem 'omniauth-linkedin'
+gem 'omniauth-twitter'
 
 group :development do
   gem 'spring'
@@ -59,3 +63,5 @@ end
 
 group :staging, :production do
 end
+
+gem 'mocha', group: :test
