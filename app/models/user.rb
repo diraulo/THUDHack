@@ -3,11 +3,15 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable, :timeoutable, :omniauthable,
-         omniauth_providers: [:google_oauth2, :linkedin]
+         omniauth_providers: [:google_oauth2]
 
-  MEMBER_TYPES = ['Entrepreneur', 'Event coordinator/Chapter owner',
-                  'Administrator', 'Partner/Sponsor']
-  validates_presence_of :first_name, :last_name, :city, :member_type
+  MEMBER_TYPES = [
+    'Entrepreneur',
+    'Event coordinator/Chapter owner',
+    'Partner/Sponsor'
+  ]
+
+  validates_presence_of :first_name, :last_name #, :city, :member_type
   validates_acceptance_of :t_and_cs
 
   def self.from_omniauth(access_token)
@@ -16,9 +20,10 @@ class User < ActiveRecord::Base
 
     unless user
       user = User.create(
-        name: data['name'],
+        first_name: data['first_name'],
+        last_name: data['last_name'],
         email: data['email'],
-        password: Devise.friendly_token[0, 20]
+        password: Devise.friendly_token[0, 10]
       )
     end
 
