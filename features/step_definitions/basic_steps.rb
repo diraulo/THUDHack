@@ -37,7 +37,7 @@ Then(/^I should be on the User registration page$/) do
 end
 
 When(/^I fill in "(.*?)" with "(.*?)"$/) do |field, value|
-  fill_in field, with: value
+  fill_in field, with: value, match: :prefer_exact
 end
 
 When(/^I select "([^"]*)" to "([^"]*)"$/) do |field, option|
