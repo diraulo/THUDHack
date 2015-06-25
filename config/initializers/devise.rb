@@ -241,10 +241,10 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :google_oauth2,
                   ENV['GOOGLE_CONSUMER_KEY'],
-                  ENV['GOOGLE_CONSUMER_SECRET'], {}
+                  ENV['GOOGLE_CONSUMER_SECRET'], provider_ignores_state: true
   config.omniauth :linkedin,
                   ENV['LINKED_IN_CONSUMER_KEY'],
-                  ENV['LINKED_IN_CONSUMER_SECRET'], {}
+                  ENV['LINKED_IN_CONSUMER_SECRET'], provider_ignores_state: true
   # config.omniauth :twitter,
   #                 ENV['TWITTER_CONSUMER_KEY'],
   #                 ENV['TWITTER_CONSUMER_SECRET'], {}
