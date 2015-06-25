@@ -6,7 +6,7 @@ development: &default
   pool: 2
   timeout: 5000
   username: postgres
-  password:
+  password: <%= ENV['THUDHACK_DATABASE_PASSWORD'] %>
 
 test: &test
   <<: *default
