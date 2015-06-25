@@ -16,6 +16,10 @@ When(/^I visit the site$/) do
   visit root_path
 end
 
+When(/^I visit the "(.*?)" page$/) do |page|
+  visit path_to(page)
+end
+
 When(/^I (?:go to|am on) the "([^"]*)" page$/) do |page|
   visit path_to(page)
 end
@@ -33,7 +37,7 @@ Then(/^I should be on the User registration page$/) do
 end
 
 When(/^I fill in "(.*?)" with "(.*?)"$/) do |field, value|
-  fill_in field, with: value
+  fill_in field, with: value, match: :prefer_exact
 end
 
 When(/^I select "([^"]*)" to "([^"]*)"$/) do |field, option|
