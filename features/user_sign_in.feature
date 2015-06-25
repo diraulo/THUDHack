@@ -9,24 +9,22 @@ Feature: User sign_in
       | John       | Doe       | john@example.com | password | Entrepreneur | pretoria |
 
     Given I am not logged in
-    When I visit the site
-    And I click "Sign in"
-    Then I should be on the "user login" page
+    And I visit the "user login" page
 
   Scenario: Successfull login
-    When I fill in "user_email" with "john@example.com"
-    And I fill in "user_password" with "password"
+    When I fill in "Email" with "john@example.com"
+    And I fill in "Password" with "password"
     And I click "Log in"
-    # Then I should see "Signed in successfully"
+    Then I should see "Signed in successfully"
 
   Scenario: User provides wrong email address
-    When I fill in "user_email" with "john1@example.com"
-    And I fill in "user_password" with "password"
+    When I fill in "Email" with "john1@example.com"
+    And I fill in "Password" with "password"
     And I click "Log in"
     Then I should see "Invalid email or password"
 
   Scenario: User provides wrong email address
-    When I fill in "user_email" with "john@example.com"
-    And I fill in "user_password" with "pa$ssword"
+    When I fill in "Email" with "john@example.com"
+    And I fill in "Password" with "pa$ssword"
     And I click "Log in"
     Then I should see "Invalid email or password"
