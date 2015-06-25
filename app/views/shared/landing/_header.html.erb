@@ -1,0 +1,15 @@
+<header class="header">
+  <nav class="navbar navbar-default navbar-fixed-top" id="nav" role="navigation">
+    <div class="container relative-nav-container">
+      <a class="toggle-button visible-xs-block" data-target="#navbar-collapse" data-toggle="collapse">
+        <i class="fa fa-navicon"></i>
+      </a>
+      <%= link_to(root_path, class: 'navbar-brand scroll') do %>
+        <%= image_tag 'logo.png', class: 'normal-logo hidden-xs', alt: 'logo' %>
+        <%= image_tag 'logo.png', class: 'inverse-logo hidden-xs', alt: 'logo' %>
+        <%= image_tag 'logo-sign2.png', class: 'visible-xs-block', alt: 'logo', height: 44, width: 40 %>
+      <% end %>
+    </div>
+  </nav>
+</header>
+<!--/.header -->
