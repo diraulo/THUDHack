@@ -14,4 +14,5 @@ Rails.application.routes.draw do
 
   get '/profile/:id' => 'admins#user_profile', as: :profile
   get '/timeline' => 'admins#timeline', as: :user_root
+  get '/account-settings' => 'admins#user_settings', as: :user_settings
 end

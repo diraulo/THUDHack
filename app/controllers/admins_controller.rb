@@ -15,4 +15,8 @@ class AdminsController < ApplicationController
   def timeline
     @current_user = current_user
   end
+
+  def user_settings
+    @user = @current_user = current_user
+  end
 end
