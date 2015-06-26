@@ -1,0 +1,103 @@
+<!-- BEGIN PROFILE SIDEBAR -->
+<div class="profile-sidebar" style="width: 250px;">
+  <!-- PORTLET MAIN -->
+  <div class="portlet light profile-sidebar-portlet">
+    <!-- SIDEBAR USERPIC -->
+    <div class="profile-userpic">
+      <%= gravatar_for @user, class: 'img-responsive' %>
+    </div>
+    <!-- END SIDEBAR USERPIC -->
+    <!-- SIDEBAR USER TITLE -->
+    <div class="profile-usertitle">
+      <div class="profile-usertitle-name">
+         <%= "#{@user.first_name} #{@user.last_name}" %>
+      </div>
+      <%#<div class="profile-usertitle-job">
+         Developer
+      </div>%>
+    </div>
+    <!-- END SIDEBAR USER TITLE -->
+    <!-- SIDEBAR BUTTONS -->
+    <% unless @current_user == @user %>
+      <div class="profile-userbuttons">
+        <button type="button" class="btn btn-circle green-haze btn-sm">Follow</button>
+        <button type="button" class="btn btn-circle btn-danger btn-sm">Message</button>
+      </div>
+    <% end %>
+    <!-- END SIDEBAR BUTTONS -->
+    <!-- SIDEBAR MENU -->
+    <% if @current_user == @user %>
+      <div class="profile-usermenu">
+        <ul class="nav">
+          <li class="active">
+            <a href="#">
+            <i class="icon-home"></i>
+            Overview </a>
+          </li>
+          <li>
+            <%= link_to(user_settings_path) do %>
+              <i class="icon-settings"></i>
+              Account Settings
+            <% end %>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+            <i class="icon-check"></i>
+            Tasks </a>
+          </li>
+        </ul>
+      </div>
+    <% end %>
+    <!-- END MENU -->
+  </div>
+  <!-- END PORTLET MAIN -->
+  <!-- PORTLET MAIN -->
+  <div class="portlet light">
+    <!-- STAT -->
+    <div class="row list-separated profile-stat">
+      <div class="col-md-4 col-sm-4 col-xs-6">
+        <div class="uppercase profile-stat-title">
+           37
+        </div>
+        <div class="uppercase profile-stat-text">
+           Projects
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6">
+        <div class="uppercase profile-stat-title">
+           51
+        </div>
+        <div class="uppercase profile-stat-text">
+           Tasks
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6">
+        <div class="uppercase profile-stat-title">
+           61
+        </div>
+        <div class="uppercase profile-stat-text">
+           Uploads
+        </div>
+      </div>
+    </div>
+    <!-- END STAT -->
+    <div>
+      <h4 class="profile-desc-title">About <%= @user.first_name %></h4>
+      <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
+      <div class="margin-top-20 profile-desc-link">
+        <i class="fa fa-globe"></i>
+        <a href="#">www.example.com</a>
+      </div>
+      <div class="margin-top-20 profile-desc-link">
+        <i class="fa fa-twitter"></i>
+        <a href="#">@twitter</a>
+      </div>
+      <div class="margin-top-20 profile-desc-link">
+        <i class="fa fa-facebook"></i>
+        <a href="#">facebook</a>
+      </div>
+    </div>
+  </div>
+  <!-- END PORTLET MAIN -->
+</div>
+<!-- END BEGIN PROFILE SIDEBAR -->
