@@ -9,5 +9,6 @@ Rails.application.config.assets.version = (ENV["ASSETS_VERSION"] || "1.0")
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
-Rails.application.config.assets.precompile += %w( custom.css vendor.css
-                                                  .svg .eot .woff .ttf )
+assets = %w( custom.css vendor.css admin.css user_profile.css theme.css admin.js
+             .svg .eot .woff .ttf )
+Rails.application.config.assets.precompile += assets

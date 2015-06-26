@@ -1,117 +1,481 @@
-//## Default dark header theme color file
+/***********
+Theme Colors
+***********/
+.theme-font-color {
+  color: #5b9bd1;
+}
 
-@import '../../../global/_variables';  // global metronic framework variables
-@import '../../../global/components/_mixins'; // global metronic framework mixings
+/***********
+Body bg color
+***********/
+body {
+  background: #e9ecf3;
+}
+body.page-md {
+  background: #f3f5f9;
+}
 
-@import '../_variables'; // theme level variables
+/***********
+Page Header
+***********/
+/* Header search bar, toggler button & top menu */
+.page-header.navbar {
+  background: #3b3f51;
+  border-bottom: 1px solid #e9ecf3;
+  /* Top notification menu/bar */
+  /* Header seaech box */
+  /* Menu Toggler */
+}
+.page-header.navbar .top-menu .navbar-nav {
+  /* Extended Dropdowns */
+  /* Notification */
+  /* Inbox */
+  /* Tasks */
+  /* User */
+  /* Language */
+  /* Dark version */
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-toggle:hover {
+  background-color: #3f4457;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-toggle > i {
+  color: #737a99;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-toggle .badge.badge-default {
+  background-color: #5b9bd1;
+  color: #5b617d;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown.open .dropdown-toggle {
+  background-color: #3f4457;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-menu:before {
+  border-bottom-color: #dce1ec;
+}
+.page-header.navbar .top-menu .navbar-nav > li.separator {
+  background: #e9ecef;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu {
+  border: 1px solid #dce1ec;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu:before {
+  border-bottom-color: #cbd2e3;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu:after {
+  border-bottom-color: #e3e6f0;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu > li.external {
+  background: #e3e6f0;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu > li.external > h3 {
+  color: #62878f;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu > li.external > a {
+  color: #5b9bd1;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu > li.external > a:hover {
+  color: #3175af;
+  text-decoration: none;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu .dropdown-menu-list > li > a {
+  border-bottom: 1px solid #eff2f6 !important;
+  color: #888;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu .dropdown-menu-list > li > a:hover {
+  background: #f8f9fa;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-notification .dropdown-menu .dropdown-menu-list > li > a .time {
+  background: #f1f1f1;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-notification .dropdown-menu .dropdown-menu-list > li > a:hover .time {
+  background: #e4e4e4;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-inbox > .dropdown-toggle > .circle {
+  background-color: #5b9bd1;
+  color: #fff;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-inbox > .dropdown-toggle > .corner {
+  border-color: transparent transparent transparent #5b9bd1;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-inbox .dropdown-menu .dropdown-menu-list .subject .from {
+  color: #5b9bd1;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-tasks .dropdown-menu .dropdown-menu-list .progress {
+  background-color: #dfe2e9;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-user > .dropdown-toggle > .username {
+  color: #aeb2c4;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-user > .dropdown-toggle > i {
+  color: #aeb2c4;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-user > .dropdown-menu {
+  width: 195px;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-language > .dropdown-toggle > .langname {
+  color: #aeb2c4;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu {
+  background: #575d77;
+  border: 0;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu:after {
+  border-bottom-color: #575d77;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu > li.external {
+  background: #464a60;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu > li.external > h3 {
+  color: #cbced9;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu > li.external > a:hover {
+  color: #87b6dd;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu.dropdown-menu-default > li a,
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu .dropdown-menu-list > li a {
+  color: #dadce4;
+  border-bottom: 1px solid #646b89 !important;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu.dropdown-menu-default > li a > i,
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu .dropdown-menu-list > li a > i {
+  color: #bcc0cf;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu.dropdown-menu-default > li a:hover,
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu .dropdown-menu-list > li a:hover {
+  background: #606683;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu.dropdown-menu-default > li a {
+  border-bottom: 0 !important;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu.dropdown-menu-default > li.divider {
+  background: #646b89;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-notification.dropdown-dark .dropdown-menu .dropdown-menu-list > li > a .time {
+  background: #4c5169;
+}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-notification.dropdown-dark .dropdown-menu .dropdown-menu-list > li > a:hover .time {
+  background: #41465a;
+}
+.page-header.navbar .search-form {
+  background: #3b3f51;
+}
+.page-header.navbar .search-form .input-group {
+  border: 1px solid #737a99;
+}
+.page-header.navbar .search-form .input-group:hover {
+  border-color: #666d8c;
+}
+.page-header.navbar .search-form .input-group .form-control {
+  color: #737a99;
+}
+.page-header.navbar .search-form .input-group .form-control::-moz-placeholder {
+  color: #707797;
+  opacity: 1;
+}
+.page-header.navbar .search-form .input-group .form-control:-ms-input-placeholder {
+  color: #707797;
+}
+.page-header.navbar .search-form .input-group .form-control::-webkit-input-placeholder {
+  color: #707797;
+}
+.page-header.navbar .search-form .input-group .input-group-btn .btn.submit > i {
+  color: #737a99;
+}
+.page-header.navbar .menu-toggler {
+  background-image: image-url("admin/layout4/img/sidebar-toggle-light.png");
+}
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent {
+  background: none;
+  border: 1px solid #50566f;
+  color: #666d8c;
+}
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent > i {
+  color: #666d8c;
+}
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent:hover,
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent:focus,
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent.active {
+  background: none;
+  border: 1px solid #737a99;
+  color: #737a99;
+}
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent:hover > i,
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent:focus > i,
+.page-header.navbar .page-actions .btn-group .btn-sm.btn-transparent.active > i {
+  color: #737a99;
+}
 
-// Theme Colors Settigns
+/* Page sidebar */
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover,
+.page-sidebar {
+  background-color: #fff;
+  /* Default sidebar */
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,
+.page-sidebar .page-sidebar-menu {
+  /* 1st level links */
+  /* All links */
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.heading > h3,
+.page-sidebar .page-sidebar-menu > li.heading > h3 {
+  color: #5c9acf;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a,
+.page-sidebar .page-sidebar-menu > li > a {
+  color: #678098;
+}
+@media (max-width: 991px) {
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a,
+  .page-sidebar .page-sidebar-menu > li > a {
+    /* 991px */
+    border-top: 1px solid white;
+  }
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i,
+.page-sidebar .page-sidebar-menu > li > a > i {
+  color: #a7bdcd;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class^="icon-"],
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class*="icon-"],
+.page-sidebar .page-sidebar-menu > li > a > i[class^="icon-"],
+.page-sidebar .page-sidebar-menu > li > a > i[class*="icon-"] {
+  color: #b7c9d6;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu > li > a > .arrow:before,
+.page-sidebar .page-sidebar-menu > li > a > .arrow.open:before {
+  color: #b1c4d2;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a,
+.page-sidebar .page-sidebar-menu > li:hover > a,
+.page-sidebar .page-sidebar-menu > li.open > a {
+  background: #f2f6f9;
+  color: #5b9bd1;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > i,
+.page-sidebar .page-sidebar-menu > li:hover > a > i,
+.page-sidebar .page-sidebar-menu > li.open > a > i {
+  color: #5b9bd1;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > .arrow.open:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu > li:hover > a > .arrow:before,
+.page-sidebar .page-sidebar-menu > li:hover > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu > li.open > a > .arrow:before,
+.page-sidebar .page-sidebar-menu > li.open > a > .arrow.open:before {
+  color: #67a2d4;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a,
+.page-sidebar .page-sidebar-menu > li.active > a,
+.page-sidebar .page-sidebar-menu > li.active.open > a {
+  background: #f2f6f9;
+  color: #5b9bd1;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a:hover,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a:hover,
+.page-sidebar .page-sidebar-menu > li.active > a:hover,
+.page-sidebar .page-sidebar-menu > li.active.open > a:hover {
+  background: #f2f6f9;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > i,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > i,
+.page-sidebar .page-sidebar-menu > li.active > a > i,
+.page-sidebar .page-sidebar-menu > li.active.open > a > i {
+  color: #5b9bd1;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > .arrow.open:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu > li.active > a > .arrow:before,
+.page-sidebar .page-sidebar-menu > li.active > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu > li.active.open > a > .arrow:before,
+.page-sidebar .page-sidebar-menu > li.active.open > a > .arrow.open:before {
+  color: #67a2d4;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a,
+.page-sidebar .page-sidebar-menu > li.active > a {
+  border-left: 3px solid #5c9acf !important;
+  margin-left: -3px;
+  padding-left: 15px;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu li > a > .arrow:before,
+.page-sidebar .page-sidebar-menu li > a > .arrow.open:before {
+  color: #b1c4d2;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li:hover > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li:hover > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu li:hover > a > .arrow:before,
+.page-sidebar .page-sidebar-menu li:hover > a > .arrow.open:before {
+  color: #67a2d4;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li.active > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li.active > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu li.active > a > .arrow:before,
+.page-sidebar .page-sidebar-menu li.active > a > .arrow.open:before {
+  color: #67a2d4;
+}
+.page-sidebar-closed .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu:hover .sub-menu,
+.page-sidebar-closed .page-sidebar .page-sidebar-menu:hover .sub-menu {
+  background: #fff;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a,
+.page-sidebar .page-sidebar-menu .sub-menu > li > a {
+  color: #678098;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i,
+.page-sidebar .page-sidebar-menu .sub-menu > li > a > i {
+  color: #a7bdcd;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"],
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class*="icon-"],
+.page-sidebar .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"],
+.page-sidebar .page-sidebar-menu .sub-menu > li > a > i[class*="icon-"] {
+  color: #b7c9d6;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li > a > .arrow:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li > a > .arrow.open:before {
+  color: #b1c4d2;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a,
+.page-sidebar .page-sidebar-menu .sub-menu > li:hover > a,
+.page-sidebar .page-sidebar-menu .sub-menu > li.open > a,
+.page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+  color: #5b9bd1;
+  background: #f2f6f9 !important;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > i,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > i,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > i,
+.page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > i,
+.page-sidebar .page-sidebar-menu .sub-menu > li.open > a > i,
+.page-sidebar .page-sidebar-menu .sub-menu > li.active > a > i {
+  color: #5b9bd1;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > .arrow.open:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > .arrow.open:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > .arrow:before,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > .arrow:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li.open > a > .arrow:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li.open > a > .arrow.open:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li.active > a > .arrow:before,
+.page-sidebar .page-sidebar-menu .sub-menu > li.active > a > .arrow.open:before {
+  color: #67a2d4;
+}
 
-// Main settings   
-$theme-name:                                                    		"default";  
-$brand-main-color:                                               		#5b9bd1 !default;       
-$brand-main-font-color:													#ffffff !default;   
+/******
+Page Footer
+******/
+.page-footer .page-footer-inner {
+  color: #69789e;
+}
+.page-footer-fixed .page-footer {
+  background-color: #e9ecf3;
+}
+.page-footer-fixed .page-footer .page-footer-inner {
+  color: #69789e;
+}
+.page-boxed .page-footer .page-footer-inner {
+  color: #69789e;
+}
+.page-footer-fixed .page-boxed .page-footer {
+  background-color: #e9ecf3;
+}
+@media (min-width: 992px) {
+  /* 992px */
+  /* Sidebar menu closed */
+  .page-sidebar-menu.page-sidebar-menu-hover-submenu li:hover > .sub-menu {
+    box-shadow: 5px 5px rgba(140, 178, 198, 0.2);
+  }
+  .page-sidebar-menu.page-sidebar-menu-closed > li:hover {
+    box-shadow: 5px 5px rgba(140, 178, 198, 0.2);
+  }
+  .page-sidebar-menu.page-sidebar-menu-closed > li:hover > .sub-menu {
+    box-shadow: 5px 5px rgba(140, 178, 198, 0.2);
+  }
 
-// Body and header    
-$bg-color:                                                         		darken(#F0F2F7, 2%) !default;          
-$header-bg-color:														#3B3F51 !default;   
-$header-top-shadow:                                                     0px 1px 10px 0px rgba(50, 50, 50, 0.2);
-$header-mobile-menu-border:                                             lighten($header-bg-color, 3%);  
+  /* Fixed Sidebar */
+  .page-sidebar-fixed:not(.page-footer-fixed) .page-content {
+    border-bottom: 0;
+  }
+  .page-sidebar-fixed:not(.page-footer-fixed) .page-footer .page-footer-inner {
+    color: #333;
+  }
 
-// Header search
-$header-search-bg-color:                                        		$header-bg-color !default;  
-$header-search-font-color:                                      		lighten($header-bg-color, 25%) !default; 
-$header-search-placeholder-font-color:                          		darken($header-search-font-color, 1%) !default;
+  /* Boxed Layout */
+  .page-boxed {
+    /* Page container */
+  }
+  .page-boxed .page-container {
+    background-color: #e9ecf3;
+  }
+  .page-boxed.page-sidebar-reversed .page-container {
+    border-left: 0;
+  }
+  .page-boxed.page-sidebar-fixed .page-container {
+    border-left: 0;
+    border-bottom: 0;
+  }
+  .page-boxed.page-sidebar-reversed.page-sidebar-fixed .page-container {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
 
-//Sidebar toggler
-$header-toggler-img:                                                   'sidebar-toggle-light.png';
-
-// Top menu
-$header-top-menu-bg-hover-color:                                		lighten($header-bg-color, 2%) !default;  
-$header-top-menu-bg-hover-color-on-dropdown-open:               		lighten($header-bg-color, 2%) !default;
-$header-top-menu-badge-bg-color:                                		$brand-main-color;
-$header-top-menu-badge-font-color:                              		lighten($header-bg-color, 15%) !default;
-$header-top-menu-icon-font-color:                               		lighten($header-bg-color, 25%) !default;
-
-// Top menu user bar
-$header-top-menu-user-font-color:                                       lighten($header-bg-color, 45%) !default; 
-$header-top-menu-user-bg-color:                                 		none !default;
-
-//begin: Top Menu Extended Dropdowns  
-$header-top-menu-extended-separator-bg-color: 							darken(#f8f9fa, 5%);
-$header-top-menu-extended-dropdown-item-bg-color-on-hover:              #f8f9fa;      
-$header-top-menu-extended-dropdown-item-border-color:                   #EFF2F6;
-$header-top-menu-extended-dropdown-item-font-color:						#888888;
-
-$header-top-menu-extended-dropdown-header-bg-color:						darken($bg-color, 2%);
-$header-top-menu-extended-dropdown-border-color:                        darken($header-top-menu-extended-dropdown-header-bg-color, 2%);
-$header-top-menu-extended-dropdown-header-font-color:					darken(#6f949c, 5%); 
-
-$header-top-menu-inbox-dropdown-from-font-color:						#5b9bd1;  
-
-$header-top-menu-task-dropdown-progress-bg-color:						#dfe2e9;
-
-$header-top-menu-notification-time-bg-color:							lighten(#eee, 1%); 
-
-// Top Menu Notifications
-$header-hor-menu-bg-color:                                              lighten($header-bg-color, 3%);      
-$header-top-menu-dropdown-dark-bg-color: 								lighten($header-hor-menu-bg-color, 10%);  
-$header-top-menu-dropdown-dark-header-bg-color:							lighten($header-hor-menu-bg-color, 2%);
-$header-top-menu-dropdown-dark-header-font-color:						lighten($header-top-menu-dropdown-dark-header-bg-color, 50%);
-
-$header-top-menu-dropdown-dark-item-font-color:							lighten($header-top-menu-dropdown-dark-header-bg-color, 55%);  
-$header-top-menu-dropdown-dark-item-border-color:						lighten($header-top-menu-dropdown-dark-bg-color, 6%);
-$header-top-menu-dropdown-dark-item-icon-color:							lighten($header-top-menu-dropdown-dark-header-bg-color, 45%);
-$header-top-menu-dropdown-dark-item-bg-color-on-hover:					lighten($header-top-menu-dropdown-dark-bg-color, 4%);
-
-$header-top-menu-dropdown-dark-default-menu-divider:					$header-top-menu-dropdown-dark-item-border-color;
-$header-top-menu-dropdown-dark-notification-time-bg-color:				darken($header-top-menu-dropdown-dark-bg-color, 5%);  
-//end: Top Menu Extended Dropdowns  
-
-// Top menu dropdown 
-$header-top-menu-dropdown-head-bg-color:                                lighten(#3D4A53, 35%);
-$header-top-menu-dropdown-head-font-color:                              lighten(#3D4A53, 95%);
-$header-top-menu-dropdown-border-color:                                 lighten(#3D4A53, 60%);
-
-// Sidebar menu
-$sidebar-bg-color:                                                      #ffffff !default;   
-
-$sidebar-menu-heading-font-color:                                       #5C9ACF !default;  
-
-$sidebar-menu-link-font-color:                                  		darken(#768da2, 5%) !default;   
-$sidebar-menu-link-font-color-on-hover:                         		$brand-main-color !default;        
-$sidebar-menu-link-font-color-on-active:                        		$brand-main-color !default;   
-
-$sidebar-menu-link-icon-font-color:                             		darken(#b7c9d6, 5%) !default;
-$sidebar-menu-link-icon-font-color-on-active:                   		$brand-main-color !default;
-$sidebar-menu-link-icon-font-color-on-hover:                            $brand-main-color !default;
-
-$sidebar-menu-link-bg-color-on-hover:                           		darken(#f9fbfc, 2%) !default;   
-$sidebar-menu-link-bg-color-on-active:                          		darken(#f9fbfc, 2%) !default;       
-
-$sidebar-menu-arrow-color:                                      		lighten($sidebar-menu-link-icon-font-color, 3%) !default;
-$sidebar-menu-arrow-color-on-active:                            		lighten($sidebar-menu-link-icon-font-color-on-active, 3%) !default;
-$sidebar-menu-arrow-color-on-hover:                                     lighten($sidebar-menu-link-icon-font-color-on-hover, 3%) !default; 
-
-$sidebar-menu-sub-menu-link-font-color:                         		$sidebar-menu-link-font-color !default; 
-$sidebar-menu-sub-menu-link-icon-font-color:                    		$sidebar-menu-link-icon-font-color !default;
-
-$sidebar-menu-sub-menu-link-bg-color-on-hover:                  		$sidebar-menu-link-bg-color-on-hover !default;
-$sidebar-menu-sub-menu-link-font-color-on-hover:                  		$sidebar-menu-link-font-color-on-hover !default;
-$sidebar-menu-sub-menu-link-icon-font-color-on-hover:                   $sidebar-menu-link-icon-font-color-on-hover !default;  
-
-$sidebar-menu-sub-menu-box-shadow-color:                                darken($sidebar-menu-link-bg-color-on-hover, 30%) !default;
-$sidebar-menu-hover-sub-menu-bg-color:									#FFFFFF !default;   
-
-// Sidebar for mobile
-$mobile-sidebar-menu-bg-color:                           				darken($bg-color, 7%) !default;   
-$mobile-sidebar-menu-link-bg-color-on-hover:             				darken($bg-color, 4%) !default;
-
-// Footer
-$footer-fluid-font-color:                                               #69789E;
-$footer-default-font-color:                                     		#69789E !default;    
-$footer-default-go-top-bg-color:                                		darken(#94A0B2, 10%) !default;       
-$footer-default-go-top-icon-font-color:                          		lighten(#94A0B2, 40%) !default;
-$footer-fixed-bg-color: 												$bg-color !default;   
-
-@import '_base';
+  /* Sidebar Menu Wirh Hoverable Submenu */
+  .page-sidebar-menu-hover-submenu li:hover a > .arrow {
+    border-right: 8px solid #fff;
+  }
+  .page-sidebar-reversed .page-sidebar-menu-hover-submenu li:hover a > .arrow {
+    border-left: 8px solid #fff;
+  }
+  .page-sidebar-menu-hover-submenu li:hover > .sub-menu {
+    background: #fff !important;
+  }
+}
+@media (max-width: 991px) {
+  /* 991px */
+  .page-header.navbar {
+    padding: 0;
+    /* Top menu */
+  }
+  .page-header.navbar .top-menu .navbar-nav > li.dropdown > .dropdown-toggle:hover {
+    background-color: #3d4154;
+  }
+}
+@media (max-width: 767px) {
+  /* 767px */
+  .page-header.navbar {
+    background: #3b3f51;
+    border-bottom: 1px solid #41465a;
+    /* Top menu */
+  }
+  .page-header.navbar .page-top {
+    background: #3b3f51;
+  }
+  .page-header.navbar .top-menu .navbar-nav > li.dropdown > .dropdown-toggle:hover {
+    background-color: #393d4e;
+  }
+}
+/****
+ CSS3 Spinner Bar
+****/
+.page-spinner-bar > div,
+.block-spinner-bar > div {
+  background: #6fa7d7;
+}
