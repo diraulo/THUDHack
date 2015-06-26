@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # if routing the root path, update for your controller
   root to: 'pages#show', id: 'landing'
+
+  get '/profile/:id' => 'admins#user_profile', as: :profile
+  get '/timeline' => 'admins#timeline', as: :user_root
 end
