@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   root to: 'pages#show', id: 'landing'
 
   get '/profile/:id' => 'admins#user_profile', as: :profile
+  get '/timeline' => 'admins#timeline', as: :user_root
 end
